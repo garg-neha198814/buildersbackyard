@@ -1,0 +1,40 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_vertical_margin">64dp</dimen>
+    <dimen name="activity_product_vievpager">400dp</dimen>
+    <dimen name="activity_home_textview_name">18sp</dimen>
+    <dimen name="activity_home_textview_cost">18sp</dimen>
+    <dimen name="textsize">50sp</dimen>
+    <!-- Sign Up activity-->
+
+    <dimen name="activity_signup_height">60dp</dimen>
+    <!-- Login Activity-->
+    <dimen name="activity_social_btn_textsize">16sp</dimen>
+    <dimen name="activity_social_txt_textsize">18sp</dimen>
+    <!--Add Post-->
+    <dimen name="activity_post_ad_imagview_height">180dp</dimen>
+
+    <!--Toolbar.xml-->
+    <dimen name="toolbar_header_textsize">18sp</dimen>
+    <!-- Forget Password-->
+    <dimen name="password_header_textsize">16sp</dimen>
+    <dimen name="password_txt_textsize">16sp</dimen>
+    <!-- Post A Job-->
+    <dimen name="post_job_edt_size">60dp</dimen>
+    <dimen name="post_job_edt_multi_size">80dp</dimen>
+
+    <!-- change password-->
+    <dimen name="change_password_edittext">40dp</dimen>
+    <!-- contact Us-->
+    <dimen name="message_edittext">140dp</dimen>
+    <dimen name="messagelist_image">200dp</dimen>
+    <!-- Get Hired-->
+    <dimen name="gethired_image">200dp</dimen>
+    <!-- findcandidate-->
+    <dimen name="findcandidate_image">160dp</dimen>
+    <!-- For hire-->
+    <dimen name="forhire_textsize">24sp</dimen>
+</resources>

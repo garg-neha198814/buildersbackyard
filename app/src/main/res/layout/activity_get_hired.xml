@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:clickable="true"
+    android:padding="15dp"
+    tools:context="com.itpro.buildersbackyard.ui.fragment.PostAd">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/get_hired_pic"
+                android:layout_width="@dimen/gethired_image"
+                android:layout_height="@dimen/gethired_image"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/user"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/hired_lbl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/get_hired_pic"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/hired_edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_size"
+                android:layout_below="@+id/hired_lbl_name"
+                android:background="@drawable/bg_add_post_input"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/hired_lbl_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hired_edt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Trade"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/hired_edt_trade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_size"
+                android:layout_below="@+id/hired_lbl_trade"
+
+                android:background="@drawable/bg_add_post_input"
+                android:inputType="text"
+                android:minLines="5"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/hired_lbl_certifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hired_edt_trade"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Certifications"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/hired_edt_certifications"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_multi_size"
+                android:layout_below="@+id/hired_lbl_certifications"
+                android:background="@drawable/bg_add_post_input"
+                android:gravity="start"
+
+                android:inputType="text"
+                android:minLines="3"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/hired_lbl_specialities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hired_edt_certifications"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Specialities"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/hired_edt_specialities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_multi_size"
+                android:layout_below="@+id/hired_lbl_specialities"
+                android:background="@drawable/bg_add_post_input"
+                android:gravity="start"
+                android:inputType="text"
+                android:minLines="3"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/hired_lbl_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hired_edt_specialities"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Zipcode"
+                android:textColor="@color/black" />
+
+
+            <!--<AutoCompleteTextView
+                android:id="@+id/add_post_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_size"
+                android:layout_below="@+id/hired_lbl_location"
+
+                android:background="@drawable/bg_add_post_input"
+                android:hint="Enter the Location"
+                android:paddingLeft="10dp" />-->
+
+            <EditText
+                android:id="@+id/add_post_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_size"
+                android:layout_below="@+id/hired_lbl_location"
+                android:background="@drawable/bg_add_post_input"
+                android:inputType="number"
+
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/hired_lbl_availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_post_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Availability"
+                android:textColor="@color/black" />
+
+            <!--   <EditText
+                   android:id="@+id/hired_edt_availability"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/post_job_edt_multi_size"
+                   android:layout_below="@+id/hired_lbl_availability"
+
+                   android:background="@drawable/bg_add_post_input"
+                   android:inputType="text"
+                   android:padding="5dp"
+                   android:singleLine="true" />-->
+
+            <LinearLayout
+                android:id="@+id/post_job_startDate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_job_edt_multi_size"
+                android:layout_below="@+id/hired_lbl_availability"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/post_job_startdate_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_job_edt_size"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_add_post_input"
+                    android:drawableEnd="@mipmap/cal"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@mipmap/cal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hired_post_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_job_startDate_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_pink_btn"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="POST"
+                android:textColor="#fff" />
+        </RelativeLayout>
+        <!-- <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+             android:id="@+id/progressBar"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             app:mlpb_progress_color="@android:color/holo_blue_light" />-->
+    </ScrollView>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:mlpb_progress_color="@android:color/holo_blue_light" />
+</RelativeLayout>

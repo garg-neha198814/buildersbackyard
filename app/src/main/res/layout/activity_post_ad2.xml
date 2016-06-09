@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fcfcfc"
+    android:clickable="true"
+    tools:context="com.itpro.buildersbackyard.ui.fragment.PostAd2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="10">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/additionaldetails"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_add_post_category"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/spinner_back_dropdown" />
+
+        <EditText
+            android:id="@+id/spinner_additional_info"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+
+            android:background="@drawable/bg_add_post_input"
+            android:hint="Additional Information"
+            android:paddingLeft="10dp" />
+        <AutoCompleteTextView
+            android:id="@+id/add_post_location"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:hint="Enter the Location"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/post_add_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pink_btn"
+            android:text="@string/post_btn_text"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:mlpb_progress_color="@android:color/holo_blue_light" />
+</RelativeLayout>

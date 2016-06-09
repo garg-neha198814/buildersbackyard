@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:clickable="true"
+    android:padding="16dp"
+    tools:context="com.itpro.buildersbackyard.ui.fragment.Search">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:weightSum="13">
+
+
+            <EditText
+
+                android:id="@+id/search_by_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_post_input"
+                android:hint="@string/keyword"
+                android:padding="10dp"
+                android:singleLine="true"
+
+                android:textSize="16sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:background="@drawable/dropdown" />
+
+            <EditText
+                android:id="@+id/search_by_brand"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_post_input"
+                android:hint="Search by Brand"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/search_by_zipcode"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_post_input"
+                android:hint="Search by Zipcode"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:text="@string/price_heading"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight=".5"
+                android:text="@string/price_range"
+                android:textColor="#777777"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/price_selected_value"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <SeekBar
+                android:id="@+id/price_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:max="10000"
+
+                android:padding="18dp"
+                android:progressDrawable="@drawable/custom_seekbar"
+                android:thumb="@mipmap/thumb" />
+
+
+            <TextView
+                android:id="@+id/miles"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:text="@string/miles_heading"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/miles_value"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+
+                android:text="@string/miles_range"
+                android:textColor="#777777"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/miles_selected_value"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+
+            <com.itpro.buildersbackyard.utils.SeekbarWithIntervals
+                android:id="@+id/seekbar1"
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+                android:layout_weight="1"></com.itpro.buildersbackyard.utils.SeekbarWithIntervals>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_green_btn"
+                    android:text="@string/search_btn_txt"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_pink_btn"
+                    android:text="@string/cancel_btn_txt"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:mlpb_progress_color="@android:color/holo_blue_light" />
+
+</RelativeLayout>

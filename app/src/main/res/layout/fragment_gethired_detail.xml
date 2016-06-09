@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="right"
+                    android:weightSum="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/hired_candidate_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gethired_image"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/user" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/hired_candidate_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        tools:text="John ALbert" />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Availability : "
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/hired_candidate_availablity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            tools:text="" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="TRADE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hired_candidate_trade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:text=" android Development"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hired_candidate_trade"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="CERTIFICATION"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hired_candidate_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:text="Productivity App certification ,CISCO certification,OS x certification"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/hired_candidate_specialities_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hired_candidate_certification"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="SPECIALITIES"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hired_candidate_specialities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hired_candidate_specialities_label"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:text=" Animations,Services"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hired_candidate_specialities"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="ZIPCODE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hired_candidate_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:text="New York Address 34 floor avenue,5th floor New York"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hired_candidate_location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="PHONE NO"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hired_candidate_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:padding="7dp"
+                android:text="0134567899"
+                android:textSize="16dp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/chatting_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hired_candidate_contact"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/bg_add_post_input"
+                android:drawableRight="@mipmap/chat_black"
+                android:padding="10dp"
+                android:gravity="right|center_vertical"
+                android:text="chat now" />
+            <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:mlpb_progress_color="@android:color/holo_blue_light" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

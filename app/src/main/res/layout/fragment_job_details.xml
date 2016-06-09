@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#fcfcfc"
+    android:clickable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/post_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software engineer"
+                    android:textAllCaps="true"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/post_needed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_header"
+                    android:layout_marginTop="20dp"
+                    android:text="Needed"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/experience_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_needed"
+                    android:inputType="textMultiLine"
+
+                    android:text=" QED Baton is a leading B2B Demand Generation, Content Syndication, Leads Management, Market Research  Lead Generation Solution Provider Company in India."
+
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/certification_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/experience_details"
+                    android:layout_marginTop="15dp"
+                    android:text="Certification Required"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/certification_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/certification_header"
+                    android:layout_marginTop="7dp"
+                    android:inputType="textMultiLine"
+                    android:text="OS X certification,ACMT certification,productivity app certification"
+
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/specialities_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/certification_details"
+                    android:layout_marginTop="15dp"
+                    android:text="Specialities"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/specialities_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/specialities_header"
+                    android:layout_marginTop="7dp"
+                    android:inputType="textMultiLine"
+                    android:text="Animations,services"
+
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/zipcode_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/specialities_details"
+                    android:layout_marginTop="15dp"
+                    android:text="Zipcode"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/zipcode_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zipcode_header"
+                    android:layout_marginTop="7dp"
+                    android:singleLine="true"
+                    android:text="123456"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/contact_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zipcode_details"
+                    android:layout_marginTop="20dp"
+                    android:text="Phone No"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contact_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_header"
+
+                    android:layout_marginTop="7dp"
+                    android:singleLine="true"
+                    android:text="1234567890"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/startdate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_details"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/startdate_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_header"
+                        android:layout_weight="0.4"
+
+                        android:text="Date :"
+
+                        android:textAllCaps="true"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/startdate_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_header"
+                        android:layout_weight="0.6"
+                        android:paddingLeft="5dp"
+                        android:text="10/11/2015"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/chatting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/main_layout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_add_post_input"
+                android:drawableRight="@mipmap/chat_black"
+                android:padding="10dp"
+                android:gravity="right|center_vertical"
+                android:text="chat now" />
+            <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:mlpb_progress_color="@android:color/holo_blue_light" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

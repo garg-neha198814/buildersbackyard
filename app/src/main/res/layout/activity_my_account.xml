@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:scrollbars="none"
+    tools:context="com.itpro.buildersbackyard.ui.activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adversitements"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myAccount_Label_height"
+            android:background="#F1F1F1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/myAccount_paddingLeft"
+            android:text="@string/label_adv"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/new_post_adv_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adversitements"
+            android:orientation="vertical"
+
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/post_new_adv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/new_post"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/txt_post_ad"
+
+                />
+
+            <TextView
+                android:id="@+id/current_adv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/current_add"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="My POSTS"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/chats"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myAccount_Label_height"
+            android:layout_below="@+id/new_post_adv_ll"
+            android:background="#F1F1F1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/myAccount_paddingLeft"
+            android:text="@string/label_chats"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chats"
+            android:drawableLeft="@mipmap/message"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/txt_message"
+
+            />
+
+
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myAccount_Label_height"
+            android:layout_below="@+id/message"
+            android:background="#F1F1F1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/myAccount_paddingLeft"
+            android:text="@string/label_others"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/others"
+            android:drawableLeft="@mipmap/settings_acct"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+
+            android:text="@string/txt_setting"
+
+            />
+    </RelativeLayout>
+</ScrollView>
